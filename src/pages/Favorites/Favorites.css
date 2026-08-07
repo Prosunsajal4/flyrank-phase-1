@@ -1,0 +1,132 @@
+.favorites-container {
+  min-height: 90vh;
+  background-color: #121212;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.favorites-header {
+  padding: 4rem 1.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.favorites-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  letter-spacing: -0.5px;
+}
+
+.favorites-header p {
+  font-size: 1.1rem;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.favorites-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.favorites-count {
+  font-size: 0.85rem;
+  color: #8c8c8c;
+  margin-bottom: 1.5rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #e50914;
+}
+
+.empty-favorites {
+  text-align: center;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.empty-favorites h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.empty-favorites p {
+  color: #8c8c8c;
+  font-size: 1rem;
+  max-width: 300px;
+}
+
+.btn-explore {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.btn-explore:hover {
+  background-color: #f40612;
+  box-shadow: 0 0 12px rgba(229, 9, 20, 0.4);
+}
+
+.error-banner {
+  background-color: rgba(229, 9, 20, 0.15);
+  border-left: 4px solid #e50914;
+  color: #ff9999;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  gap: 1.5rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #e50914;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .favorites-header {
+    padding: 2rem 1rem 1.5rem;
+  }
+  .favorites-header h1 {
+    font-size: 2rem;
+  }
+}
